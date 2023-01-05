@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import {FaBars, FaTimes} from 'react-icons/fa'
 
 function Nav() {
   const [isMobile, setIsMobile] = useState(false)
@@ -8,7 +9,7 @@ function Nav() {
       <a href="#" className="logo">
         JOEKAT
       </a>
-      <ul className={isMobile ? "navbar-nav-mobile" :"navbar-nav"}>
+      <ul className={isMobile ? "navbar-nav-mobile" : "navbar-nav"}>
         <li>
           <a href="#" className="navbar-navlinks">
             Home
@@ -42,12 +43,15 @@ function Nav() {
             About
           </a>
         </li>
+        <div className="login">
+          <button>Login</button>
+          <button>Register</button>
+        </div>
       </ul>
-      <div className="login">
-        <button>Login</button>
-        <button>Register</button>
+
+      <div className="ham-burger" onClick={() => setIsMobile(!isMobile)}>
+        {isMobile ? <FaTimes /> : <FaBars />}
       </div>
-      <div className="ham-burger" onClick={()=>setIsMobile(!isMobile)}>{isMobile ? <img src="/images/close.png" alt="" /> : <img src="/images/menu2.png" alt="" />}</div>
     </nav>
   );
 }

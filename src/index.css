@@ -44,15 +44,13 @@ a {
   font-family: 'Ubuntu', sans-serif;
   font-size: 24px;
   font-weight: 700;
-  line-height: 27.58px;
-  padding-top: 10px;
 }
 
 .navbar-nav {
   display: flex;
+  align-items: center;
   list-style: none;
   column-gap: 31px;
-  padding-top: 15px;
 }
 
 .navbar-navlinks {
@@ -185,12 +183,25 @@ a {
     align-items: center;
   }
 
+  .navbar .logo{
+    font-size: 20px;
+  }
+
   .navbar-nav {
     display: flex;
     list-style: none;
     column-gap: 21px;
-    padding-top: 15px;
   }
+
+  .navbar .login button {
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 8px;
+  padding: 6px 30px;
+  border: 0.8px solid var(--btn-color);
+  color: var(--btn-color);
+  background-color: transparent;
+}
 
   .hero {
     height: 70vh;
@@ -198,24 +209,29 @@ a {
 
   .hero .left h1 {
     font-weight: 700;
-    font-size: 54px;
+    font-size: 34px;
     line-height: 56px;
     margin-bottom: 56px;
   }
 
   .hero .left h3 {
     font-weight: 700;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 35.62px;
   }
 
   .hero .right h4 {
     font-weight: 700;
-    font-size: 19.75px;
+    font-size: 15.75px;
     text-align: center;
     margin-left: 0px;
     margin-top: -10px;
   }
+
+  .hero .right img{
+    width: 80%;
+  }
+
   .footer {
     display: flex;
     flex-direction: column;
@@ -244,7 +260,9 @@ a {
   }
 
   .navbar .login {
-    margin-right: 50px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
   }
   .navbar-nav-mobile {
     position: absolute;
@@ -271,7 +289,7 @@ a {
     display: block;
     position: absolute;
     font-size: 30px;
-    top: 20px;
+    
     right: 15px;
     transition: all 0.2s ease-in-out;
   }
