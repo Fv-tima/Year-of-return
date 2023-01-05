@@ -47,7 +47,7 @@ function Nav() {
         <button>Login</button>
         <button>Register</button>
       </div>
-      <div className="ham-burger" onClick={()=>setIsMobile(!isMobile)}>{isMobile ? "x" : "-"}</div>
+      <div className="ham-burger" onClick={()=>setIsMobile(!isMobile)}>{isMobile ? <img src="/images/close.png" alt="" /> : <img src="/images/menu2.png" alt="" />}</div>
     </nav>
   );
 }

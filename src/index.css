@@ -1,3 +1,5 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300&family=Poppins&family=Ubuntu:wght@300&display=swap');
+
 /* General styles */
 * {
   padding: 0;
@@ -6,7 +8,8 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 :root {
@@ -25,7 +28,7 @@ a {
   background-size: cover;
   background-position: center;
   width: 100%;
-  max-height: 100vh;
+  height: 100vh;
   color: var(--text-color);
   padding: 20px 114px 30px;
 }
@@ -38,6 +41,7 @@ a {
 }
 
 .navbar .logo {
+  font-family: 'Ubuntu', sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 27.58px;
@@ -52,6 +56,7 @@ a {
 }
 
 .navbar-navlinks {
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   margin-top: 10px;
@@ -65,6 +70,7 @@ a {
 }
 
 .navbar .login button {
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
   border-radius: 8px;
@@ -101,7 +107,7 @@ a {
   justify-content: space-between;
   color: var(--text-color);
   align-items: center;
-  height: 80vh;
+  height: 70vh;
 }
 
 .hero .right img {
@@ -109,6 +115,7 @@ a {
 }
 
 .hero .left h1 {
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: 64px;
   line-height: 96px;
@@ -116,12 +123,14 @@ a {
 }
 
 .hero .left h3 {
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: 31px;
   line-height: 35.62px;
 }
 
 .hero .right h4 {
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 24.75px;
   text-align: center;
@@ -143,11 +152,9 @@ a {
   column-gap: 21.47px;
 }
 
-.footer .left img {
-  width: 100%;
-}
 
 .footer .left p {
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 11.08px;
   color: #959595;
@@ -162,6 +169,7 @@ a {
 }
 
 .footer .right p {
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
   text-align: center;
@@ -185,12 +193,9 @@ a {
   }
 
   .hero {
-    height: 75vh;
+    height: 70vh;
   }
 
-  .hero .right img {
-    width: 70%;
-  }
   .hero .left h1 {
     font-weight: 700;
     font-size: 54px;
@@ -237,6 +242,10 @@ a {
     display: flex;
     align-items: center;
   }
+
+  .navbar .login {
+    margin-right: 50px;
+  }
   .navbar-nav-mobile {
     position: absolute;
     display: block;
@@ -262,8 +271,13 @@ a {
     display: block;
     position: absolute;
     font-size: 30px;
-    top: 15px;
-    right: 25px;
+    top: 20px;
+    right: 15px;
     transition: all 0.2s ease-in-out;
   }
+
+  .ham-burger.img{
+    width: 50px;
+  }
+
 }
